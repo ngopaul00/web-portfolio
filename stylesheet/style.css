@@ -133,8 +133,8 @@
 
      /*logo*/
   .logo{
-      
-      width:70pt;
+      float: left;
+      width:60pt;
   }
   @media only screen and (min-width: 728px) {
     .logo { 
