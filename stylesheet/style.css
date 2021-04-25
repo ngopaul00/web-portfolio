@@ -108,7 +108,7 @@
     
 
 
-  /* hovering & effect*/
+  /* hovering & moving effect*/
   
     .social1:hover{
         animation: shake 15s;
@@ -192,12 +192,12 @@
   /*hover effect on images*/
   .imgdes:hover{
     
-    transform: scale(1.1); 
+    transform: scale(1.05); 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8)
   }
 
   .imgdes1:hover{
-        transform: scale(1.1); 
+        transform: scale(1.05); 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7)
   }
   
@@ -214,23 +214,21 @@
       .images {
         padding:10px;
         padding-top:30px;
-        margin-right:0px;
         margin-left:10px;
       }
     }
   
     @media only screen and (min-width: 1535px) {
         .images {
-          padding:70px;
+          padding:60px;
           padding-top:0px;
-          margin-right:0px;
           margin-left:10px;
         }
       }
     
   
     /*header*/
-  header.websiteheader {
+  .websiteheader {
       text-align:center;
       padding-bottom:4px;
       padding-top:4px;
@@ -365,7 +363,7 @@
 }
   
   /* first block */
-/*animation*/
+/*animation changing color*/
 @keyframes textmobile {
     from {color:black ;}
     to {color:#FFD700 ;}
@@ -393,7 +391,7 @@
 
  
   @media only screen and (min-width: 728px) {
-    /*animation*/
+    /*animation changing colour*/
     @keyframes texttablet {
         from {color:white ;}
          to {color:yellow ;}
@@ -423,7 +421,7 @@
   }
 
   @media only screen and (min-width: 1535px) {
-      /*animaion*/
+      /*animation changing color*/
     @keyframes textdesktop {
         from {color:white ;}
          to {color:yellow ;}
@@ -472,10 +470,10 @@
       
    @media only screen and (min-width: 1535px) {
     .icon {
-       padding-bottom:70px;
-       padding-top:70px;
+       padding-bottom:100px;
+       padding-top:100px;
       text-align: center;
-      font-size:19pt;
+      font-size:17pt;
     }
   }
      
@@ -506,7 +504,7 @@
         margin-bottom:40px;
                 }
 
-           /*animaion*/
+           /*animaion changing color*/
     @keyframes text3tablet {
         from {color:white ;}
          to {color:black ;}
@@ -708,7 +706,7 @@
       padding-left:30px;
       padding-right:50px;
      font-weight: bold;
-      font-size:15pt;
+      font-size:14pt;
       color:#000000;
       text-align:center;
   }
@@ -717,11 +715,12 @@
     @media only screen and (min-width: 1535px) {
         .quote{
              display:inherit; 
-             font-size:17pt;
+             font-size:15pt;
              color:#000000;
              text-align:center;
              padding-top:40px;
             padding-left:30px;
+            padding-bottom: 10px;
             padding-right:70px;
             font-weight: bold;
         }
@@ -731,7 +730,7 @@
             padding-left:30px;
             padding-right:70px;
             font-weight: bold;
-            font-size:17pt;
+            font-size:15pt;
             color:#000000;
             text-align:center;
         }
