@@ -236,55 +236,25 @@
       padding-top:4px;
      }
 
-     /*logo and coloricon animation*/
+     /*logo*/
           
-   @keyframes mobile {
-        from {color: black ;}
-         to {color: gold;}
-      }
-
-    .coloricon{
-        font-size:8pt;
-        animation:mobile 3s infinite;
-        }
-
   .logo{     
        width:60pt;
        }
 
   @media only screen and (min-width: 728px) {
-/*animation*/
-    @keyframes tablet {
-        from {color: black ;}
-         to {color: gold;}
-      }
 
     .logo { 
         width:75pt;
         }
-
-    .coloricon{
-        font-size:9pt;
-        animation:tablet 5s infinite;
-    }
   }
   
   @media only screen and (min-width: 1535px) {
-      /*animation*/
-    @keyframes desktop {
-        from {color: black ;}
-         to {color:#00CED1;}
-      }
 
     .logo { 
         width:90pt;
       }
-
-    .coloricon{
-        font-size:10pt;
-        animation: desktop 5s infinite;
     }
-  }
   
 
 
@@ -398,7 +368,7 @@
 /*animation*/
 @keyframes textmobile {
     from {color:black ;}
-     to {color:#7CFC00 ;}
+    to {color:#FFD700 ;}
   }
 
   .cover{
@@ -415,9 +385,10 @@
       color:#000000;
       border:2px solid #000000;
       font-size:10pt;
+      font-weight:400;
       letter-spacing:3px;
       margin-bottom:20px;
-      animation:textmobile 4s infinite;
+      animation:textmobile 5s infinite;
  }
 
  
