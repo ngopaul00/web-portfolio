@@ -176,6 +176,7 @@
     object-fit: cover;
     text-align:center;
     transition: transform .1s;
+    margin-bottom:10px;
   }
 
   .imgdes1{
@@ -185,6 +186,7 @@
     text-align:center;
     transition: transform .1s;
     border-radius:100%;
+    margin-bottom:10px;
       }
    
   /*hover effect on images*/
@@ -234,19 +236,16 @@
       padding-top:4px;
      }
 
-     /*logo and moving icon animation*/
+     /*logo and coloricon animation*/
           
    @keyframes mobile {
-        from {left:10px;}
-        to {left:340px;}
         from {color: black ;}
          to {color: gold;}
       }
 
-    .movingicon{
+    .coloricon{
         font-size:8pt;
-        position:relative;
-        animation: mobile 5s infinite
+        animation:mobile 3s infinite;
         }
 
   .logo{     
@@ -256,8 +255,6 @@
   @media only screen and (min-width: 728px) {
 /*animation*/
     @keyframes tablet {
-        from {left:10px;}
-        to {left:720px;}
         from {color: black ;}
          to {color: gold;}
       }
@@ -266,30 +263,26 @@
         width:75pt;
         }
 
-    .movingicon{
+    .coloricon{
         font-size:9pt;
-        position: relative;
-        animation:tablet 8s infinite;
+        animation:tablet 5s infinite;
     }
   }
   
   @media only screen and (min-width: 1535px) {
       /*animation*/
     @keyframes desktop {
-        from {left: 0px;}
-        to {left: 1480px;}
         from {color: black ;}
-         to {color: gold;}
+         to {color:#00CED1;}
       }
 
     .logo { 
         width:90pt;
       }
 
-    .movingicon{
+    .coloricon{
         font-size:10pt;
-        position: relative;
-        animation: desktop 9s infinite;
+        animation: desktop 5s infinite;
     }
   }
   
@@ -494,7 +487,7 @@
    .icon{
       padding:30px;
       text-align: center;
-      font-size:10pt;
+      font-size:11pt;
           }
    
    @media only screen and (min-width: 768px) {
@@ -793,7 +786,7 @@
   .foliotext{
       font-size:10pt;
       margin-bottom:20px;
-      margin-top:10px;
+      
     }
   
   
@@ -809,7 +802,7 @@
       .foliotext{
           font-size:13pt;
           margin-bottom:30px;
-          margin-top:10px;
+          
       }
   }
   
@@ -825,7 +818,7 @@
     .foliotext{
         font-size:13pt;
         margin-bottom:30px;
-        margin-top:10px;
+       
     }
 }
 
