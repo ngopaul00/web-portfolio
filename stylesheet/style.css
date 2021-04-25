@@ -11,18 +11,15 @@
       font-size: 16px;
   }
   
-  .container{
-  }
-
-
+  
   .position{
       position:relative;
   }
+
   body {
       font-family:'Open Sans Condensed', sans-serif;
       font-style: normal; 
   }
-
 
 
   /* website structure */
@@ -55,7 +52,6 @@
   
   
   .onethird,.twothird,.onefourth,.half {
-
        float:left;
         width:100%;
   }
@@ -67,6 +63,7 @@
       width:33%;
       }
   }
+
   @media only screen and (min-width: 1535px) {
     .onethird {
         width:33%;
@@ -78,6 +75,7 @@
     width:24.7%;
       }
   }
+
   @media only screen and (min-width: 1535px) {
     .onefourth {
       width:24.7%;
@@ -101,6 +99,7 @@
       width: 66.6%; 
     }
   }
+
   @media only screen and (min-width: 1535px) {
     .twothird{
         width: 66.6%; 
@@ -109,13 +108,65 @@
     
 
 
-  /* hovering*/
+  /* hovering & effect*/
   
-  .social:hover{
-      opacity:0.60;
-    }
-  
+    .social1:hover{
+        animation: shake 15s;
+        animation-iteration-count: infinite;
+      }
 
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(360deg); }
+        10% { transform: translate(-1px, -2px) rotate(0deg); }
+        20% { transform: translate(-3px, 0px) rotate(0deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(0); }
+        50% { transform: translate(-1px, 2px) rotate(0deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(0deg); }
+        80% { transform: translate(-1px, -1px) rotate(0deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(0deg); }
+      }
+  
+      .social:hover{
+        animation: leaf 8s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes leaf {
+        0% { transform: translate(1px, 1px) rotate(20deg); }
+        10% { transform: translate(-1px, -2px) rotate(-2deg); }
+        20% { transform: translate(-3px, 0px) rotate(2deg); }
+        30% { transform: translate(3px, 2px) rotate(1deg); }
+        40% { transform: translate(1px, -1px) rotate(2deg); }
+        50% { transform: translate(-1px, 2px) rotate(0deg); }
+        60% { transform: translate(-3px, 1px) rotate(1deg); }
+        70% { transform: translate(3px, 1px) rotate(0deg); }
+        80% { transform: translate(-1px, -1px) rotate(2deg); }
+        90% { transform: translate(1px, 2px) rotate(1deg); }
+        100% { transform: translate(1px, -2px) rotate(-2deg); }
+      }
+
+      .social2:hover{
+        animation: camera 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes camera {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      
 
   /*Images*/
   
@@ -124,7 +175,28 @@
     height:auto;
     object-fit: cover;
     text-align:center;
+    transition: transform .1s;
+  }
+
+  .imgdes1{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    text-align:center;
+    transition: transform .1s;
+    border-radius:100%;
+      }
+   
+  /*hover effect on images*/
+  .imgdes:hover{
     
+    transform: scale(1.1); 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8)
+  }
+
+  .imgdes1:hover{
+        transform: scale(1.1); 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7)
   }
   
   .images {
@@ -142,7 +214,6 @@
         padding-top:30px;
         margin-right:0px;
         margin-left:10px;
-        
       }
     }
   
@@ -152,36 +223,73 @@
           padding-top:0px;
           margin-right:0px;
           margin-left:10px;
-          
         }
       }
     
   
     /*header*/
-  .websiteheader {
-     
+  header.websiteheader {
+      text-align:center;
       padding-bottom:4px;
       padding-top:4px;
-      text-align:center;
-  }
-  
+     }
 
+     /*logo and moving icon animation*/
+          
+   @keyframes mobile {
+        from {left:10px;}
+        to {left:340px;}
+        from {color: black ;}
+         to {color: gold;}
+      }
 
-     /*logo*/
-  .logo{
-      
-      width:60pt;
-  }
+    .movingicon{
+        font-size:8pt;
+        position:relative;
+        animation: mobile 5s infinite
+        }
+
+  .logo{     
+       width:60pt;
+       }
 
   @media only screen and (min-width: 728px) {
+/*animation*/
+    @keyframes tablet {
+        from {left:10px;}
+        to {left:720px;}
+        from {color: black ;}
+         to {color: gold;}
+      }
+
     .logo { 
         width:75pt;
+        }
+
+    .movingicon{
+        font-size:9pt;
+        position: relative;
+        animation:tablet 8s infinite;
     }
   }
   
   @media only screen and (min-width: 1535px) {
+      /*animation*/
+    @keyframes desktop {
+        from {left: 0px;}
+        to {left: 1480px;}
+        from {color: black ;}
+         to {color: gold;}
+      }
+
     .logo { 
         width:90pt;
+      }
+
+    .movingicon{
+        font-size:10pt;
+        position: relative;
+        animation: desktop 9s infinite;
     }
   }
   
@@ -190,12 +298,10 @@
   /* Navigation bar*/
   
   .nav {
-    
-    background-color: none;
+     background-color: none;
     margin-left:2px;
     overflow: auto;
-    
-  }
+      }
   
   /*  bar icon */
   .nav a {
@@ -209,9 +315,7 @@
       color: #000000;
       text-decoration: none;
       font-size: 17px;
-     
-  
-  }
+        }
   
   .nav b:hover {
       background-color: #000000;
@@ -223,8 +327,7 @@
   @media only screen and (min-width: 728px) {
   
       .nav {
-    
-          background-color: #000000;
+         background-color: #000000;
             overflow: auto;
             margin-left:2px;
         margin-right:2px;
@@ -253,21 +356,18 @@
   
   .nav b:hover {
       background-color: #555;
-      
     }
 
     .nav a:hover {
         background-color: #555;
       }
-  
-  }
+    }
 
 
   @media only screen and (min-width: 1535px) {
   
     .nav {
-  
-        background-color: #000000;
+          background-color: #000000;
           overflow: auto;
       }
     
@@ -294,16 +394,19 @@
 
 .nav b:hover {
     background-color: #555;
-    
-  }
+      }
 
   .nav a:hover {
       background-color: #555;
     }
-
 }
   
   /* first block */
+/*animation*/
+@keyframes textmobile {
+    from {color:black ;}
+     to {color:#7CFC00 ;}
+  }
 
   .cover{
     width:100%;
@@ -315,19 +418,23 @@
   }
 
   .block1text {
-     
-      padding:8px;
+     padding:8px;
       color:#000000;
       border:2px solid #000000;
       font-size:10pt;
       letter-spacing:3px;
-      margin-left:0px;
-      margin-right:0px;
       margin-bottom:20px;
-   
-  }
-  
+      animation:textmobile 4s infinite;
+ }
+
+ 
   @media only screen and (min-width: 728px) {
+    /*animation*/
+    @keyframes texttablet {
+        from {color:white ;}
+         to {color:yellow ;}
+      }
+
     .block1text {
       width:100%;
       top:30%;
@@ -338,7 +445,9 @@
       font-size:15pt;
       position:absolute;
       text-align:center;
+      animation:texttablet 4s infinite;
     }
+
     .cover{
         width:99.5%;
         height:35%;
@@ -347,9 +456,15 @@
         margin-right:2px;
         text-align:center;
       }
-
   }
+
   @media only screen and (min-width: 1535px) {
+      /*animaion*/
+    @keyframes textdesktop {
+        from {color:white ;}
+         to {color:yellow ;}
+      }
+
     .block1text {
       width:100%;
       top:30%;
@@ -360,7 +475,9 @@
       font-size:30pt;
       position:absolute;
       text-align:center;
+      animation:textdesktop 4s infinite;
     }
+
     .cover{
         width:99.7%;
         height:90%;
@@ -369,19 +486,16 @@
         margin-right:2px;
         text-align:center;
       }
-
   }
   
 
   
   /* second block-icon */
    .icon{
-      
       padding:30px;
       text-align: center;
       font-size:10pt;
-      
-    }
+          }
    
    @media only screen and (min-width: 768px) {
      .icon {
@@ -409,7 +523,6 @@
    }
   
    .block3text{
-  
       text-align:center;
       padding:1px;
       color:#000000;
@@ -429,6 +542,12 @@
         margin-bottom:40px;
                 }
 
+           /*animaion*/
+    @keyframes text3tablet {
+        from {color:white ;}
+         to {color:black ;}
+       }
+
        .block3text{
         font-size:20pt;
         letter-spacing:9px;
@@ -438,10 +557,9 @@
          border:none;
          width:100%;
          top:30%;
-  
-       }
-  
-      }
+         animation:text3tablet 4s infinite;
+         }
+        }
 
       @media only screen and (min-width: 1535px) {
         .img{
@@ -453,6 +571,11 @@
              margin-right:2px;
              margin-bottom:60px;
                   }
+
+            @keyframes text3desktop {
+            from {color:white ;}
+             to {color:black ;}
+             }
   
          .block3text{
           font-size:30pt;
@@ -463,35 +586,28 @@
            border:none;
            width:100%;
            top:35%;
-    
-         }
-    
-        }
+           animation:text3desktop 4s infinite;
+             }
+            }
   
 
 
   
   /* fourth block */
   .box{
-  
-      
-      color:#000000;
+         color:#000000;
       text-align: center;
       font-size:10pt;
       }
   
   .box1{
-  
-          
-   
-          color:#000000;
+           color:#000000;
           text-align: center;
           font-size:10pt;
       }
+
   .box2{
-  
-    
-              color:#000000;
+             color:#000000;
               text-align: center;
               font-size:10pt;
           }
@@ -506,10 +622,8 @@
             border: 2px solid #ffffff;
             position:absolute;
             left:38%;
-           
-            
-            
           }
+
           .box1{
             padding:1em 1em;
             font-size:8pt;
@@ -520,20 +634,18 @@
               top:45%;
               right:43%;
             }
+
             .box2{
                 padding:1em 1em;
                 font-size:8pt;
               color:#ffffff;
               text-align:center;
-             
-              border: 2px solid #ffffff;
+            border: 2px solid #ffffff;
               position:absolute;
-              
-              top:45%;
+                 top:45%;
               right:35%;
             }
-  
-   }
+     }
   
    @media only screen and (min-width: 1535px) {
     .box {
@@ -545,10 +657,8 @@
       border: 2px solid #ffffff;
       position:absolute;
       left:38%;
-     
-      
-      
     }
+
     .box1{
         padding:2em 2em;
         font-size:13pt;
@@ -559,13 +669,14 @@
         position:absolute;
        right:39%;
       }
+
       .box2{
         padding:2em 2em;
         font-size:13pt;
         top:22%;
         color:#ffffff;
         text-align:center;
-               border: 2px solid #ffffff;
+        border: 2px solid #ffffff;
         position:absolute;
         right:37%;
       }
@@ -580,8 +691,8 @@
       color:#000000;
       text-align: center;
       font-size:10pt;
-      
-  }
+        }
+
   @media only screen and (min-width: 728px) {
       .box3 {
         padding:1em 1em;
@@ -592,7 +703,6 @@
           position:absolute;
           top:45%;
           left:40%;
-          
         }
   }
 
@@ -606,12 +716,13 @@
         border: 2px solid #ffffff;
         position:absolute;
          left:40%;
-        
-      }
+              }
 }
+
   .quote {
       display:none; 
     }
+
   .quote2{
       padding-top:0px;
       padding-left:18px;
@@ -621,19 +732,18 @@
       font-style:italic;
       font-weight: bold;
       text-align:center;
-  
-  }
+    }
   
   @media only screen and (min-width: 728px) {
   .quote{
        display:none; 
   }
+
   .quote2{
       padding-top:50px;
       padding-left:30px;
       padding-right:50px;
-       
-      font-weight: bold;
+     font-weight: bold;
       font-size:15pt;
       color:#000000;
       text-align:center;
@@ -650,8 +760,8 @@
             padding-left:30px;
             padding-right:70px;
             font-weight: bold;
-
         }
+
         .quote2{
             padding-top:10px;
             padding-left:30px;
@@ -675,19 +785,16 @@
       font-size:20pt;
       letter-spacing:7px;
      font-weight: bold;
-     margin-left:0%;
-     margin-right:0%;
      margin-top:50px;
      margin-bottom:30px;
      width:100%;
-  
   }
   
   .foliotext{
       font-size:10pt;
       margin-bottom:20px;
-  
-  }
+      margin-top:10px;
+    }
   
   
   @media only screen and (min-width: 728px) {
@@ -697,13 +804,12 @@
          text-align:center;
         border:none;
         letter-spacing:5px;
-       
-        
-      }
+    }
   
       .foliotext{
           font-size:13pt;
           margin-bottom:30px;
+          margin-top:10px;
       }
   }
   
@@ -714,13 +820,12 @@
        text-align:center;
        border:none;
       letter-spacing:8px;
-     
-      
     }
 
     .foliotext{
         font-size:13pt;
         margin-bottom:30px;
+        margin-top:10px;
     }
 }
 
@@ -733,6 +838,7 @@
       font-size:15pt;
       letter-spacing:3px;
     }
+
     .ctc1{
       margin-bottom:5px;
       text-align:center;
@@ -776,6 +882,10 @@
       margin-top:5px;
       margin-bottom:30px;
       }
+
+    .button1:hover{
+        opacity:0.8;
+    }
   
       @media only screen and (min-width: 728px) {
           .ctc{
@@ -784,6 +894,7 @@
               font-size:20pt;
               letter-spacing:3px;
             }
+
             .ctc1{
               margin-bottom:70px;
               text-align:center;
@@ -829,7 +940,7 @@
               color: ffffff;
               background-color: #000000;
               float:right;
-                            }
+                 }
       }
   
       @media only screen and (min-width: 1535px) {
@@ -839,6 +950,7 @@
             font-size:25pt;
             letter-spacing:4px;
           }
+
           .ctc1{
             margin-bottom:60px;
             text-align:center;
@@ -884,7 +996,7 @@
             color: ffffff;
             background-color: #000000;
             float:right;
-                          }
+            }
     }
 
 
