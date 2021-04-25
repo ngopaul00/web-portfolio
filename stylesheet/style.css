@@ -259,7 +259,6 @@
   /* Navigation bar*/
   
   .nav {
-     background-color: none;
     margin-left:2px;
     overflow: auto;
       }
@@ -839,7 +838,7 @@
       padding:8px;
       border-radius: 4px;
       cursor: pointer;
-      color: ffffff;
+      color:#ffffff;
       background-color: #778899;
       float:right;
       margin-top:5px;
@@ -900,7 +899,7 @@
               padding:10px;
               border-radius:4px;
               cursor: pointer;
-              color: ffffff;
+              color:#ffffff;
               background-color: #000000;
               float:right;
                  }
@@ -956,7 +955,7 @@
             padding:12px;
             border-radius:4px;
             cursor: pointer;
-            color: ffffff;
+            color:#ffffff;
             background-color: #000000;
             float:right;
             }

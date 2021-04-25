@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
     <title>Photograghy website</title>
@@ -26,7 +27,7 @@
         <a href="#"><i class="fa fa-th"></i> Portfolio</a>
         <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-        <b href="#"><i class="fa fa-fw fa-search"></i></b >
+        <b href="#"><i class="fa fa-fw fa-search"></i></b>
       </div>
 </section>
 
@@ -223,8 +224,10 @@
 
         <div class="half">
                 <div class="contact-form">
-                <input class="textname" type="text" placeholder="Enter full Name" >
-                <textarea class="textbox" placeholder="Enter your message"></textarea>
+                  <label for="name">Name</label>
+                <input class="textname" id="name" name="name" type="text" placeholder="Enter full Name" >
+                <label for="message">Message</label>
+                <textarea class="textbox" id="message" name="message" placeholder="Enter your message"></textarea>
                 <button class="button1" type="submit">
                   <i class="fa fa-paper-plane"></i> SEND 
                 </button>
