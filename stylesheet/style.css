@@ -259,28 +259,39 @@
   /* Navigation bar*/
   
   .nav {
-    margin-left:2px;
-    overflow: auto;
+    background-color: #000000;
+            overflow: auto;
+          
       }
   
   /*  bar icon */
   .nav a {
-   display:none;
+    float: left;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    
   }
   
   .nav b {
-      float: left;
-      text-align: center;
-      padding: 4px;
-      color: #000000;
-      text-decoration: none;
-      font-size: 17px;
+    float: right;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    margin-right:5px;
         }
   
-  .nav b:hover {
-      background-color: #000000;
-      color:white;
+    .nav b:hover {
+      background-color: #555;
     }
+
+    .nav a:hover {
+        background-color: #555;
+      }
   
 
   
@@ -300,7 +311,7 @@
           color: white;
           text-decoration: none;
           font-size: 17px;
-          display:inherit;
+          
         }
   
         
@@ -338,7 +349,7 @@
         color: white;
         text-decoration: none;
         font-size: 19px;
-        display:inherit;
+       
       }
 
       
